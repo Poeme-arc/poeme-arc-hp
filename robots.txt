@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# TODO: 公開先確定時にURLを変更する
+Sitemap: https://poeme-arc.com/sitemap.xml
