@@ -435,7 +435,7 @@ body.menu-open .mobile-menu { opacity: 1; visibility: visible; transform: none; 
 .strength p { margin-top: 16px; color: var(--gray-600); font-size: 14px; line-height: 2.1; }
 
 /* ---------- Field cards ---------- */
-.fields { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+.fields { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
 .field-card {
   position: relative;
   display: flex; flex-direction: column;
