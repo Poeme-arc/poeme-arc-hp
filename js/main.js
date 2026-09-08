@@ -133,6 +133,8 @@ const doc = document;
         const target = parseInt(el.getAttribute("data-count"), 10);
         obs.unobserve(el);
         if (prefersReduced || !isFinite(target)) { el.textContent = target; return; }
+        // HTMLには実数を書いてある（JS無効でも正しく見える）。
+        // ここで0に戻さないのは、rAFが止まるタブでも実数が残るようにするため。
         const dur = 1300;
         const t0 = performance.now();
         const tick = (t) => {
